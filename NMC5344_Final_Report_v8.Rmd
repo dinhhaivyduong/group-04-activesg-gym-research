@@ -1,0 +1,590 @@
+---
+title: "Motivations, Barriers and ActiveSG Gym Use by Age and Sex, 2022–2025"
+subtitle: "NMC5344 Group Project Report"
+author: |
+  | Group 4
+  | DUONG DINH HAI VY
+  | ADELLE LIM XEN WEI
+  | CHEN ANQI
+  | NGUYEN LE UYEN
+  | CHIAM SOON LIN EZRA
+date: "Word count: 1,064 (excluding R code, output, tables and references)"
+output:
+  pdf_document:
+    latex_engine: xelatex
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{float}
+  - \floatplacement{table}{H}
+geometry: margin=2cm
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+                      fig.width = 7, fig.height = 3.6, fig.pos = "H")
+```
+
+```{r packages}
+library(tidyverse)   # readr, dplyr, tidyr, stringr, ggplot2
+library(knitr)       # kable() tables
+library(broom)       # tidy() and glance() model summaries
+
+YEARS      <- 2022:2025
+AGE_LEVELS <- c("13-19", "20-39", "40-59", "60+")
+```
+
+# Introduction
+
+Many people know exercise is important, yet not everyone acts on it. ActiveSG data show that from 2022 to 2025, gym visits by
+women grew much faster than men's, and those by adults aged 60+ grew fastest.
+
+**Research question:** How do motivations and barriers to exercise relate to
+changing ActiveSG gym attendance across age and sex between 2022 and 2025?
+
+Following the instructor's feedback on our proposal, we analyse groups, divide
+visits by population, use four survey indices and check for Simpson's paradox.
+
+# 1. Datasets and data preparation
+
+## 1a. Observations and variables
+
+We use three public datasets (Department of Statistics Singapore, n.d.;
+Sport Singapore, n.d.-a, n.d.-b, 2026).
+
+```{r load}
+mot_raw <- read_csv("MotivationstoParticipateinSportExercise.csv")
+bar_raw <- read_csv("BarrierstoParticipationinSportExercise.csv")
+
+# The SingStat file has notes above and below the table; readLines() + read.csv()
+# keeps the leading spaces in "Data Series", which mark region, sex and age rows.
+gym_lines <- readLines("M920481.csv", warn = FALSE)
+header    <- grep("^Data Series", gym_lines)
+gym_raw   <- read.csv(text = gym_lines[header:length(gym_lines)],
+                      colClasses = "character", check.names = FALSE,
+                      strip.white = FALSE)
+names(gym_raw) <- trimws(names(gym_raw))
+gym_raw <- gym_raw |>
+  filter(!is.na(suppressWarnings(as.numeric(`2025`))))   # keep data rows only
+
+tibble(Dataset      = c("Motivations survey", "Barriers survey", "ActiveSG gym visits"),
+       Observations = c(nrow(mot_raw), nrow(bar_raw), nrow(gym_raw)),
+       Variables    = c(ncol(mot_raw), ncol(bar_raw), ncol(gym_raw)),
+       Years        = c("2019-2025", "2019-2025", "2022-2025")) |>
+  kable(booktabs = TRUE, caption = "Size of each dataset")
+```
+
+Each survey row gives the % citing one reason in one year, age group and sex
+(motivations: participants; barriers: non-participants). The gym table has one row per region, sex or age series.
+
+## 1b. Variable types
+
+```{r var-types}
+var_types <- function(data, name) {
+  tibble(Dataset = name, Variable = names(data),
+         Type = map_chr(data, ~ class(.x)[1]))
+}
+
+bind_rows(var_types(mot_raw, "Motivations"),
+          var_types(bar_raw, "Barriers"),
+          var_types(gym_raw, "Gym visits")) |>
+  kable(booktabs = TRUE, caption = "Variable types in the raw datasets")
+```
+
+Year and Percentage are numeric; age group, sex and reason are categorical.
+Gym visit counts are read as text and converted below.
+
+## 1c. Data preparation
+
+**Harmonising age groups.** The same group appears as "13 to 19", "13 -19" and
+"13 - 19", so we remove spaces and replace "to" with "-".
+
+```{r clean-age}
+clean_age <- function(x) str_replace(str_remove_all(x, "\\s"), "to", "-")
+```
+
+**Survey indices.** Four indices, chosen before modelling, combine related
+items: health motivation (physical or mental health), enjoyment motivation
+(interest in the sport or meeting people), time barriers (work, family, school)
+and health barriers (too old or health condition). The surveys publish only
+each group's top 10 items, so a missing item is coded 0, a lower bound rather
+than an observed value (table below; Section 4c tests this).
+
+```{r survey-indices}
+mot_items <- c(physical = "better physical health", mental = "better mental health",
+               interest = "interest of the sports", social = "meet other people")
+bar_items <- c(overtime = "too busy working overtime", family = "take care of family members",
+               school = "too busy with schoolwork", studywork = "studying and working",
+               twojobs = "more than one job", too_old = "too old for sport",
+               health_cnd = "health condition is not suitable")
+
+# For each item, find its rows and place the % in a 32-row grid (NA = not in top 10)
+extract_items <- function(df, item_col, patterns) {
+  df <- df |>
+    rename(item = all_of(item_col)) |>
+    filter(Year %in% YEARS) |>
+    mutate(AgeGroup = clean_age(AgeGroup), item = str_to_lower(item))
+  grid <- expand_grid(Year = YEARS, AgeGroup = AGE_LEVELS, Sex = c("Female", "Male"))
+  for (nm in names(patterns)) {
+    matched <- df |>
+      filter(str_detect(item, fixed(patterns[[nm]]))) |>
+      group_by(Year, AgeGroup, Sex) |>
+      summarise(!!nm := sum(Percentage), .groups = "drop")
+    grid <- left_join(grid, matched, by = c("Year", "AgeGroup", "Sex"))
+  }
+  grid
+}
+
+items <- extract_items(mot_raw, "Motivations", mot_items) |>
+  left_join(extract_items(bar_raw, "Barriers", bar_items),
+            by = c("Year", "AgeGroup", "Sex"))
+
+item_labels <- c(
+  physical = "M: better physical health", mental = "M: better mental health",
+  interest = "M: interest in the sport", social = "M: meet other people",
+  overtime = "B: busy working overtime", family = "B: care for family",
+  school = "B: busy with schoolwork", studywork = "B: studying and working",
+  twojobs = "B: more than one job", too_old = "B: too old for sport",
+  health_cnd = "B: health condition")
+
+items |>
+  summarise(across(-c(Year, AgeGroup, Sex), ~ sum(is.na(.x)))) |>
+  pivot_longer(everything(), names_to = "Item", values_to = "Cells set to 0 (of 32)") |>
+  mutate(Item = item_labels[Item]) |>
+  kable(booktabs = TRUE, caption = "Survey items missing from a group's top 10")
+
+items <- items |> mutate(across(-c(Year, AgeGroup, Sex), ~ replace_na(.x, 0)))
+
+survey <- items |>
+  transmute(Year, AgeGroup, Sex,
+            mot_health = (physical + mental) / 2,                      # % of participants
+            mot_enjoy  = (interest + social) / 2,
+            bar_time   = overtime + family + school + studywork + twojobs,  # per 100 non-participants
+            bar_health = too_old + health_cnd)
+```
+
+**Gym visits.** The table marks region, sex and age rows only by indentation,
+so we count leading spaces, carry labels down with `fill()`, and sum over the
+five regions.
+
+```{r parse-gym}
+gym_long <- gym_raw |>
+  rename(series = `Data Series`) |>
+  mutate(indent = nchar(series) - nchar(trimws(series, which = "left")),
+         label  = trimws(series),
+         region = if_else(indent == 0, label, NA_character_),
+         sex    = if_else(indent == 2, label, NA_character_)) |>
+  fill(region) |>
+  group_by(region) |> fill(sex) |> ungroup() |>
+  pivot_longer(as.character(YEARS), names_to = "Year", values_to = "visits") |>
+  mutate(Year = as.integer(Year), visits = as.numeric(visits))
+```
+
+**The 2024 gap.** About 1.47 million visits in July–December 2024 have no
+region, sex or age. We allocate them by each group's share of recorded 2024
+visits; otherwise 2024 would show a false drop.
+
+```{r gap-2024}
+year_totals <- gym_long |>
+  filter(indent == 0) |>
+  group_by(Year) |>
+  summarise(grand_total = sum(visits))
+
+age_sex <- gym_long |>
+  filter(indent == 4, sex %in% c("Female", "Male"),
+         label %in% c("13 - 19", "20 - 39", "40 - 59", "60+")) |>
+  mutate(AgeGroup = clean_age(label)) |>
+  group_by(Year, AgeGroup, Sex = sex) |>
+  summarise(visits_recorded = sum(visits), .groups = "drop")
+
+allocation <- age_sex |>
+  group_by(Year) |>
+  summarise(recorded = sum(visits_recorded)) |>
+  left_join(year_totals, by = "Year") |>
+  mutate(scale_factor = grand_total / recorded)
+
+allocation |>
+  mutate(Year = as.character(Year)) |>
+  kable(booktabs = TRUE, digits = 3, format.args = list(big.mark = ","),
+        caption = "Allocation of visits with no age or sex recorded")
+```
+
+**Visits per resident.** Total visits largely reflect group size, so we divide
+by each group's resident population (SingStat table M810011, end June). The
+13–19 population is two-fifths of the 10–14 band (assuming ages are evenly
+spread) plus the 15–19 band.
+
+```{r merge}
+population <- read_csv("population.csv")
+
+merged <- age_sex |>
+  left_join(select(allocation, Year, scale_factor), by = "Year") |>
+  mutate(visits = visits_recorded * scale_factor) |>
+  inner_join(survey, by = c("Year", "AgeGroup", "Sex")) |>
+  left_join(population, by = c("Year", "AgeGroup", "Sex")) |>
+  mutate(year  = Year,
+         age   = factor(AgeGroup, levels = AGE_LEVELS),
+         sex   = factor(Sex, levels = c("Female", "Male")),
+         group = paste(AgeGroup, Sex),
+         visits_per_resident = visits / Population) |>
+  select(year, age, sex, group, visits, population = Population,
+         visits_per_resident, mot_health, mot_enjoy, bar_time, bar_health)
+
+stopifnot(nrow(merged) == 32, !anyNA(merged))
+glimpse(merged)
+```
+
+The final dataset has 32 rows (4 years × 4 age groups × 2 sexes) and
+`r ncol(merged)` variables: age group and sex are categorical; all others are
+numeric.
+
+# 2. Summary statistics
+
+```{r stats-helper}
+stats5 <- function(data, var) {
+  data |> summarise(n = n(), Mean = mean({{ var }}), Median = median({{ var }}),
+                    SD = sd({{ var }}), Min = min({{ var }}), Max = max({{ var }}))
+}
+tab <- function(x, cap, d = 2) kable(x, booktabs = TRUE, digits = d,
+                                     format.args = list(big.mark = ","), caption = cap)
+```
+
+```{r stats-visits}
+bind_rows(merged |> stats5(visits) |> mutate(Year = "All years"),
+          merged |> group_by(Year = year) |> stats5(visits) |> mutate(Year = as.character(Year))) |>
+  relocate(Year) |>
+  tab("Annual gym visits per age-sex group", d = 0)
+
+bind_rows(merged |> group_by(Group = sex) |> stats5(visits_per_resident),
+          merged |> group_by(Group = age) |> stats5(visits_per_resident)) |>
+  mutate(Group = as.character(Group)) |>
+  tab("Gym visits per resident by sex and age group")
+```
+
+Visits are right-skewed (mean `r format(round(mean(merged$visits)), big.mark = ",")`,
+median `r format(round(median(merged$visits)), big.mark = ",")`): a few large groups,
+especially men aged 20–39, pull the mean up. Per resident, men made about four
+times as many visits as women (2.40 vs 0.59 a year), and use falls steadily
+with age, from 3.16 visits per teenager to 0.49 among those aged 60+.
+
+```{r stats-survey}
+items |>
+  pivot_longer(-c(Year, AgeGroup, Sex), names_to = "Item", values_to = "pct") |>
+  mutate(Item = item_labels[Item]) |>
+  group_by(Item) |> stats5(pct) |> arrange(desc(Mean)) |>
+  tab("Survey items (% of respondents)", d = 1)
+
+merged |>
+  pivot_longer(mot_health:bar_health, names_to = "Index", values_to = "value") |>
+  mutate(Index = recode(Index, mot_health = "Health motivation", mot_enjoy = "Enjoyment motivation",
+                        bar_time = "Time barrier", bar_health = "Health barrier")) |>
+  group_by(Index, `Age group` = age) |> stats5(value) |>
+  tab("Motivation and barrier indices by age group", d = 1)
+```
+
+Better physical health is the most common motivation (mean 79%); overtime
+and family care are the most common barriers. Age, not sex, divides the
+indices: enjoyment motivation falls from 38 (teenagers) to 10 (60+), while
+health barriers rise from under 12 to 60.
+
+# 3. Visualisations
+
+```{r chart1, fig.height = 3.2}
+merged |>
+  group_by(year, sex) |> summarise(visits = sum(visits), .groups = "drop") |>
+  group_by(sex) |> mutate(index = visits / visits[year == 2022] * 100) |>
+  ggplot(aes(year, index, colour = sex)) +
+  geom_line(linewidth = 1) + geom_point(size = 2) +
+  labs(title = "Chart 1. Female gym visits doubled between 2022 and 2025",
+       x = "Year", y = "Visits index (2022 = 100)", colour = "Sex") +
+  theme_minimal()
+```
+
+**Female visits grew much faster than male visits** (+103% vs +59%), and the growth gap
+widened after 2023, when male visits plateaued.
+
+```{r chart2, fig.height = 2.8}
+merged |>
+  filter(year %in% c(2022, 2025)) |>
+  select(year, age, sex, visits) |>
+  pivot_wider(names_from = year, values_from = visits, names_prefix = "y") |>
+  mutate(growth = (y2025 / y2022 - 1) * 100) |>
+  ggplot(aes(age, growth, fill = sex)) +
+  geom_col(position = "dodge") +
+  geom_text(aes(label = paste0(round(growth), "%")),
+            position = position_dodge(width = 0.9), vjust = -0.3, size = 3) +
+  labs(title = "Chart 2. Older groups grew fastest; 60+ women tripled their visits",
+       x = "Age group", y = "Growth in visits, 2022-2025 (%)", fill = "Sex") +
+  theme_minimal()
+```
+
+**Growth rises with age for both sexes**, from 37% (men) and 71% (women) among
+teenagers to 121% and 201% among those aged 60+.
+
+```{r chart3, fig.height = 3.2}
+merged |>
+  group_by(age) |>
+  summarise(Time = mean(bar_time), Health = mean(bar_health)) |>
+  pivot_longer(-age, names_to = "barrier", values_to = "value") |>
+  ggplot(aes(age, value, fill = barrier)) +
+  geom_col(position = "dodge") +
+  labs(title = "Chart 3. Time barriers dominate under 60; health barriers dominate 60+",
+       x = "Age group", y = "Mentions per 100 non-participants", fill = "Barrier") +
+  theme_minimal()
+```
+
+**Health, not time, is the main barrier after 60.** Time barriers peak at about
+75 mentions per 100 among 20–39 year olds and fall to 17 at 60+.
+
+```{r chart4, fig.height = 3.2}
+merged |>
+  group_by(age, sex) |>
+  summarise(Health = mean(mot_health), Enjoyment = mean(mot_enjoy), .groups = "drop") |>
+  pivot_longer(c(Health, Enjoyment), names_to = "motivation", values_to = "pct") |>
+  ggplot(aes(age, pct, colour = motivation, group = motivation)) +
+  geom_line(linewidth = 1) + geom_point(size = 2) +
+  facet_wrap(~ sex) +
+  labs(title = "Chart 4. Enjoyment motivation fades with age; health motivation rises",
+       x = "Age group", y = "% of participants", colour = "Motivation") +
+  theme_minimal()
+```
+
+**Motivation shifts from enjoyment to health with age.** Enjoyment falls from
+about 43% to 9% among men and from 34% to 12% among women.
+
+```{r chart5, fig.height = 3.8}
+ggplot(merged, aes(bar_health, log(visits_per_resident))) +
+  geom_point(aes(colour = group)) +
+  geom_smooth(aes(colour = group), method = "lm", se = FALSE, linewidth = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, colour = "black", linetype = "dashed") +
+  labs(title = "Chart 5. The pooled trend (dashed) reverses within groups",
+       x = "Health barrier index", y = "log(gym visits per resident)", colour = "Group") +
+  theme_minimal()
+```
+
+**The pooled trend is misleading.** Across all groups, higher health barriers
+go with fewer visits per resident, but within six of eight age-sex groups the link is
+positive. The pooled line compares older with younger groups: a
+Simpson's paradox.
+
+# 4. Models
+
+```{r model-data}
+gym <- merged |>
+  mutate(year = factor(year),
+         male = as.integer(sex == "Male"),
+         log_vpr = log(visits_per_resident),
+         across(mot_health:bar_health, ~ as.numeric(scale(.x))))   # z-scores
+```
+
+The outcome is log(visits per resident), because the rates are right-skewed.
+Indices are z-scores, so a coefficient *b* means the visit rate changes by
+100 × (e^b^ − 1)% per 1 SD increase.
+
+## 4a. Two models and their motivation
+
+```{r simpson-check, include=FALSE}
+simpson_pooled <- coef(lm(log_vpr ~ mot_health, data = gym))[["mot_health"]]
+simpson_pos <- gym |>
+  group_by(group) |>
+  summarise(slope = coef(lm(log_vpr ~ mot_health))[["mot_health"]]) |>
+  summarise(n = sum(slope > 0)) |>
+  pull(n)
+```
+
+As Chart 5 shows, comparing groups mainly compares young and old people:
+health motivation's uncontrolled slope is also negative
+(`r round(simpson_pooled, 2)`) but positive within `r simpson_pos` of 8 groups.
+Both models therefore control for age-sex group and year, comparing each group
+only with itself.
+
+**Model 1 (control model).** Is a group's gym use higher in years when its
+motivations are stronger or barriers weaker? It adds age-sex group
+(removing stable differences) and year (removing shared changes such as
+post-COVID recovery) to the four indices.
+
+```{r model-1}
+model_1 <- lm(log_vpr ~ mot_health + mot_enjoy + bar_time + bar_health +
+                group + year, data = gym)
+summary(model_1)
+```
+
+**Model 2 (interaction model).** Our question asks how links differ by sex, so
+Model 2 adds one interaction, enjoyment × sex. Only one is tested, as 32 rows
+cannot support more.
+
+```{r model-2}
+model_2 <- lm(log_vpr ~ mot_health + mot_enjoy + bar_time + bar_health +
+                mot_enjoy:male + group + year, data = gym)
+summary(model_2)
+```
+
+## 4b. Can the models be compared?
+
+Yes. Both use the same outcome and 32 rows, and Model 1 is nested in Model 2,
+so adjusted R², AIC and an F-test apply.
+
+```{r compare}
+bind_rows(glance(model_1) |> mutate(model = "Model 1: control"),
+          glance(model_2) |> mutate(model = "Model 2: + enjoyment x sex")) |>
+  select(model, r.squared, adj.r.squared, sigma, AIC, df.residual, nobs) |>
+  kable(booktabs = TRUE, digits = 3, caption = "Model fit")
+
+f_test <- anova(model_1, model_2)
+f_test
+```
+
+## 4c. Which is the better model?
+
+```{r fit-plot, fig.height = 3.4}
+bind_rows(
+  gym |> mutate(model = "Model 1: control", predicted = fitted(model_1)),
+  gym |> mutate(model = "Model 2: + enjoyment x sex", predicted = fitted(model_2))) |>
+  ggplot(aes(predicted, log_vpr, colour = age, shape = sex)) +
+  geom_abline(linetype = "dashed") +
+  geom_point(size = 2.5) +
+  facet_wrap(~ model) +
+  labs(title = "Observed vs predicted log(visits per resident)",
+       subtitle = "Points on the dashed line are predicted perfectly",
+       x = "Predicted", y = "Observed", colour = "Age group", shape = "Sex") +
+  theme_minimal()
+```
+
+```{r resid-plot, fig.height = 3.4}
+bind_rows(
+  gym |> mutate(model = "Model 1: control",
+                fitted = fitted(model_1), residual = resid(model_1)),
+  gym |> mutate(model = "Model 2: + enjoyment x sex",
+                fitted = fitted(model_2), residual = resid(model_2))) |>
+  ggplot(aes(fitted, residual, colour = age, shape = sex)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_point(size = 2.5) +
+  facet_wrap(~ model) +
+  labs(title = "Residuals of each model",
+       x = "Fitted log(visits per resident)", y = "Residual",
+       colour = "Age group", shape = "Sex") +
+  theme_minimal()
+```
+
+```{r numbers, include=FALSE}
+pct  <- function(b) round(100 * (exp(b) - 1))
+ptxt <- function(p) if (p < 0.001) "p < 0.001" else paste0("p = ", formatC(p, format = "f", digits = 3))
+pval <- function(m, term) ptxt(summary(m)$coefficients[term, "Pr(>|t|)"])
+f_p  <- ptxt(f_test[["Pr(>F)"]][2])
+
+b <- coef(model_2); V <- vcov(model_2)
+slope_women <- b[["mot_enjoy"]]
+slope_men   <- b[["mot_enjoy"]] + b[["mot_enjoy:male"]]
+se_men      <- sqrt(V["mot_enjoy", "mot_enjoy"] + V["mot_enjoy:male", "mot_enjoy:male"] +
+                    2 * V["mot_enjoy", "mot_enjoy:male"])
+p_men       <- ptxt(2 * pt(-abs(slope_men / se_men), df.residual(model_2)))
+```
+
+```{r checks}
+# Check 1: do the four indices add to a group + year baseline?
+model_0 <- lm(log_vpr ~ group + year, data = gym)
+p_base  <- ptxt(anova(model_0, model_1)[["Pr(>F)"]][2])
+
+# Check 2: fill items missing from the top 10 with each group's 10th-ranked value
+fill_tenth <- function(raw, item_col, patterns) {
+  tenth <- raw |>
+    filter(Year %in% YEARS) |>
+    mutate(AgeGroup = clean_age(AgeGroup)) |>
+    group_by(Year, AgeGroup, Sex) |>
+    summarise(tenth = min(Percentage), .groups = "drop")
+  extract_items(raw, item_col, patterns) |>
+    left_join(tenth, by = c("Year", "AgeGroup", "Sex")) |>
+    mutate(across(all_of(names(patterns)), ~ coalesce(.x, tenth))) |>
+    select(-tenth)
+}
+
+survey_sens <- fill_tenth(mot_raw, "Motivations", mot_items) |>
+  left_join(fill_tenth(bar_raw, "Barriers", bar_items), by = c("Year", "AgeGroup", "Sex")) |>
+  transmute(year = factor(Year), age = AgeGroup, sex = Sex,
+            mot_health = (physical + mental) / 2,
+            mot_enjoy  = (interest + social) / 2,
+            bar_time   = overtime + family + school + studywork + twojobs,
+            bar_health = too_old + health_cnd) |>
+  mutate(across(mot_health:bar_health, ~ as.numeric(scale(.x))))
+
+gym_sens <- gym |>
+  select(-(mot_health:bar_health)) |>
+  mutate(age = as.character(age), sex = as.character(sex)) |>
+  left_join(survey_sens, by = c("year", "age", "sex"))
+
+model_1_sens <- update(model_1, data = gym_sens)
+model_2_sens <- update(model_2, data = gym_sens)
+```
+
+Model 2 is better: adjusted R² rises from
+`r round(summary(model_1)$adj.r.squared, 3)` to
+`r round(summary(model_2)$adj.r.squared, 3)`, AIC falls from
+`r round(AIC(model_1), 1)` to `r round(AIC(model_2), 1)`, the F-test is
+significant (`r f_p`), and its residuals are smaller. However, the interaction
+was chosen after exploring the data, so the result is tentative.
+
+Two checks support the indices: adding them to a group-and-year baseline
+improves fit (`r p_base`), and filling missing top-10 items with each group's
+10th-ranked value (their maximum) instead of 0 barely changes the results
+(enjoyment +`r pct(coef(model_1_sens)[["mot_enjoy"]])`%,
+`r pval(model_1_sens, "mot_enjoy")`; interaction
+`r pval(model_2_sens, "mot_enjoy:male")`).
+
+## 4d. Interpreting the results
+
+```{r coefficients, fig.height = 3.4}
+coefs <- bind_rows(tidy(model_1, conf.int = TRUE) |> mutate(model = "Model 1: control"),
+                   tidy(model_2, conf.int = TRUE) |> mutate(model = "Model 2: + enjoyment x sex")) |>
+  filter(term %in% c("mot_health", "mot_enjoy", "bar_time", "bar_health", "mot_enjoy:male")) |>
+  mutate(term = recode(term, mot_health = "Health motivation", mot_enjoy = "Enjoyment motivation",
+                       bar_time = "Time barrier", bar_health = "Health barrier",
+                       `mot_enjoy:male` = "Enjoyment x male"))
+
+ggplot(coefs, aes(estimate, term, colour = model)) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_pointrange(aes(xmin = conf.low, xmax = conf.high),
+                  position = position_dodge(width = 0.5)) +
+  labs(title = "Coefficients with 95% confidence intervals",
+       x = "Change in log(visits per resident) per 1 SD", y = NULL, colour = NULL) +
+  theme_minimal() + theme(legend.position = "bottom")
+```
+
+- **Model 1.** Comparing each group with itself, enjoyment motivation stands out: in years when
+  a group's enjoyment index was 1 SD higher, its visit rate was about
+  `r pct(coef(model_1)[["mot_enjoy"]])`% higher (`r pval(model_1, "mot_enjoy")`).
+  Health motivation shows at most a weak link (`r pval(model_1, "mot_health")`)
+  and time barriers none (`r pval(model_1, "bar_time")`). The health barrier is
+  positive (`r pct(coef(model_1)[["bar_health"]])`%,
+  `r pval(model_1, "bar_health")`), which is counter-intuitive; as barriers
+  come from non-participants, we do not read this as an effect.
+- **Model 2.** The enjoyment link may be stronger for women (about
+  `r pct(slope_women)`% per 1 SD, `r pval(model_2, "mot_enjoy")`) than for men
+  (about `r pct(slope_men)`%, `r p_men`); the difference is significant
+  (`r pval(model_2, "mot_enjoy:male")`) but exploratory.
+- **In plain English.** Gym use per resident was higher in years when more
+  people in a group said they exercise for enjoyment and to meet others,
+  possibly more so among women.
+
+# Limitations
+
+Results are group-level associations, not individual or causal effects.
+Motivations and barriers come from different respondents, visits include repeat
+visits, and the surveys cover sport generally, not only gyms.
+
+# References
+
+\noindent\hangindent=0.5in Department of Statistics Singapore. (n.d.). *Singapore residents by age group,
+ethnic group and sex, end June, annual* (Table M810011) [Data set]. Retrieved
+November 12, 2026, from https://tablebuilder.singstat.gov.sg/table/TS/M810011
+
+\noindent\hangindent=0.5in Sport Singapore. (n.d.-a). *Barriers to participation in sport/exercise*
+[Data set]. Data.gov.sg. Retrieved October 16, 2026, from
+https://data.gov.sg/datasets/d_466a8e16e4edfe5ee693b8273a62b835/view
+
+\noindent\hangindent=0.5in Sport Singapore. (n.d.-b). *Motivations to participate in sport/exercise*
+[Data set]. Data.gov.sg. Retrieved October 16, 2026, from
+https://data.gov.sg/datasets/d_bdf1a23b058aa4041ea7e0c2090aaf90/view
+
+\noindent\hangindent=0.5in Sport Singapore. (2026). *ActiveSG members' visits to ActiveSG gyms by planning
+region, age group, sex, annual* (Table M920481) [Data set]. Department of
+Statistics Singapore. Retrieved October 31, 2026, from
+https://tablebuilder.singstat.gov.sg/table/TS/M920481
