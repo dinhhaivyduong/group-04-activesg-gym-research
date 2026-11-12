@@ -1,0 +1,561 @@
+Year,AgeGroup,Sex,Motivations,Percentage
+2019,13 to 19,Female,For better physical health,67
+2019,13 to 19,Female,For the interest of the sports,56
+2019,13 to 19,Female,To look or feel good,34
+2019,13 to 19,Female,For better mental health/ To de-stress,31
+2019,13 to 19,Female,To train for an event or competition,22
+2019,13 to 19,Female,To develop skills that help me perform better at school/work/life in general,14
+2019,13 to 19,Female,The facilities are near where I live/work/study,10
+2019,13 to 19,Female,To meet other people,10
+2019,13 to 19,Female,Have more spare time for sports,6
+2019,13 to 19,Female,Others,5
+2019,13 to 19,Male,For the interest of the sports,58
+2019,13 to 19,Male,For better physical health,57
+2019,13 to 19,Male,For better mental health/ To de-stress,27
+2019,13 to 19,Male,To look or feel good,27
+2019,13 to 19,Male,To develop skills that help me perform better at school/work/life in general,18
+2019,13 to 19,Male,To train for an event or competition,17
+2019,13 to 19,Male,To meet other people,16
+2019,13 to 19,Male,Have more spare time for sports,4
+2019,13 to 19,Male,There are new facilities which previously were not available,1
+2019,13 to 19,Male,Recover from injury or illness,1
+2019,20 to 39,Female,For better physical health,73
+2019,20 to 39,Female,To look or feel good,39
+2019,20 to 39,Female,For better mental health/ To de-stress,37
+2019,20 to 39,Female,For the interest of the sports,25
+2019,20 to 39,Female,To meet other people,9
+2019,20 to 39,Female,To develop skills that help me perform better at school/work/life in general,7
+2019,20 to 39,Female,Have more spare time for sports,6
+2019,20 to 39,Female,Others,3
+2019,20 to 39,Female,Recover from injury or illness,3
+2019,20 to 39,Female,The facilities are near where I live/work/study,3
+2019,20 to 39,Male,For better physical health,71
+2019,20 to 39,Male,For the interest of the sports,36
+2019,20 to 39,Male,For better mental health/ To de-stress,32
+2019,20 to 39,Male,To look or feel good,30
+2019,20 to 39,Male,To meet other people,11
+2019,20 to 39,Male,To develop skills that help me perform better at school/work/life in general,8
+2019,20 to 39,Male,To train for an event or competition,6
+2019,20 to 39,Male,Have more spare time for sports,5
+2019,20 to 39,Male,Recover from injury or illness,3
+2019,20 to 39,Male,The facilities are near where I live/work/study,2
+2019,40 to 59,Female,For better physical health,75
+2019,40 to 59,Female,For better mental health/ To de-stress,39
+2019,40 to 59,Female,To look or feel good,36
+2019,40 to 59,Female,For the interest of the sports,15
+2019,40 to 59,Female,To meet other people,11
+2019,40 to 59,Female,To develop skills that help me perform better at school/work/life in general,8
+2019,40 to 59,Female,Have more spare time for sports,5
+2019,40 to 59,Female,Recover from injury or illness,2
+2019,40 to 59,Female,The facilities are near where I live/work/study,2
+2019,40 to 59,Female,There are new facilities which previously were not available,2
+2019,40 to 59,Male,For better physical health,75
+2019,40 to 59,Male,For better mental health/ To de-stress,38
+2019,40 to 59,Male,To look or feel good,25
+2019,40 to 59,Male,For the interest of the sports,20
+2019,40 to 59,Male,To meet other people,8
+2019,40 to 59,Male,Have more spare time for sports,7
+2019,40 to 59,Male,To develop skills that help me perform better at school/work/life in general,7
+2019,40 to 59,Male,Recover from injury or illness,3
+2019,40 to 59,Male,Others,2
+2019,40 to 59,Male,The facilities are near where I live/work/study,2
+2019,60+,Female,For better physical health,78
+2019,60+,Female,For better mental health/ To de-stress,33
+2019,60+,Female,To look or feel good,20
+2019,60+,Female,To meet other people,17
+2019,60+,Female,For the interest of the sports,9
+2019,60+,Female,To develop skills that help me perform better at school/work/life in general,5
+2019,60+,Female,Recover from injury or illness,4
+2019,60+,Female,Have more spare time for sports,4
+2019,60+,Female,Others,2
+2019,60+,Female,The facilities are near where I live/work/study,1
+2019,60+,Male,For better physical health,85
+2019,60+,Male,For better mental health/ To de-stress,29
+2019,60+,Male,To look or feel good,19
+2019,60+,Male,To meet other people,16
+2019,60+,Male,For the interest of the sports,10
+2019,60+,Male,Recover from injury or illness,6
+2019,60+,Male,To develop skills that help me perform better at school/work/life in general,5
+2019,60+,Male,Have more spare time for sports,4
+2019,60+,Male,The facilities are near where I live/work/study,3
+2019,60+,Male,There are new facilities which previously were not available,1
+2020,13 to 19,Female,For better physical health,77
+2020,13 to 19,Female,For the interest of the sports,43
+2020,13 to 19,Female,For better mental health/ To de-stress,40
+2020,13 to 19,Female,To look or feel good,39
+2020,13 to 19,Female,To train for an event or competition,20
+2020,13 to 19,Female,To develop skills that help me perform better at school/work/life in general,15
+2020,13 to 19,Female,To meet other people,12
+2020,13 to 19,Female,To make up for sitting down too much at home / working from home,10
+2020,13 to 19,Female,The facilities are near where I live/work/study,8
+2020,13 to 19,Female,To distract myself from the current situation,8
+2020,13 to 19,Male,For better physical health,77
+2020,13 to 19,Male,For the interest of the sports,61
+2020,13 to 19,Male,To look or feel good,39
+2020,13 to 19,Male,For better mental health/ To de-stress,38
+2020,13 to 19,Male,To meet other people,20
+2020,13 to 19,Male,To develop skills that help me perform better at school/work/life in general,15
+2020,13 to 19,Male,Have more spare time for sports,13
+2020,13 to 19,Male,To train for an event or competition,13
+2020,13 to 19,Male,The facilities are near where I live/work/study,9
+2020,13 to 19,Male,To make up for sitting down too much at home / working from home,9
+2020,20 to 39,Female,For better physical health,84
+2020,20 to 39,Female,For better mental health/ To de-stress,50
+2020,20 to 39,Female,To look or feel good,48
+2020,20 to 39,Female,For the interest of the sports,23
+2020,20 to 39,Female,To make up for sitting down too much at home / working from home,11
+2020,20 to 39,Female,Adapted to exercise at home,8
+2020,20 to 39,Female,The facilities are near where I live/work/study,7
+2020,20 to 39,Female,Have more spare time for sports,7
+2020,20 to 39,Female,To meet other people,6
+2020,20 to 39,Female,To develop skills that help me perform better at school/work/life in general,4
+2020,20 to 39,Male,For better physical health,83
+2020,20 to 39,Male,To look or feel good,48
+2020,20 to 39,Male,For better mental health/ To de-stress,45
+2020,20 to 39,Male,For the interest of the sports,37
+2020,20 to 39,Male,To meet other people,14
+2020,20 to 39,Male,The facilities are near where I live/work/study,11
+2020,20 to 39,Male,To make up for sitting down too much at home / working from home,9
+2020,20 to 39,Male,To develop skills that help me perform better at school/work/life in general,6
+2020,20 to 39,Male,Have more spare time for sports,6
+2020,20 to 39,Male,To train for an event or competition,5
+2020,40 to 59,Female,For better physical health,88
+2020,40 to 59,Female,To look or feel good,42
+2020,40 to 59,Female,For better mental health/ To de-stress,40
+2020,40 to 59,Female,For the interest of the sports,12
+2020,40 to 59,Female,To make up for sitting down too much at home / working from home,9
+2020,40 to 59,Female,Adapted to exercise at home,7
+2020,40 to 59,Female,To meet other people,7
+2020,40 to 59,Female,The facilities are near where I live/work/study,4
+2020,40 to 59,Female,Have more spare time for sports,3
+2020,40 to 59,Female,Recover from injury or illness,2
+2020,40 to 59,Male,For better physical health,86
+2020,40 to 59,Male,For better mental health/ To de-stress,44
+2020,40 to 59,Male,To look or feel good,39
+2020,40 to 59,Male,For the interest of the sports,20
+2020,40 to 59,Male,The facilities are near where I live/work/study,6
+2020,40 to 59,Male,To make up for sitting down too much at home / working from home,6
+2020,40 to 59,Male,To meet other people,5
+2020,40 to 59,Male,Have more spare time for sports,5
+2020,40 to 59,Male,Adapted to exercise at home,4
+2020,40 to 59,Male,To develop skills that help me perform better at school/work/life in general,4
+2020,60+,Female,For better physical health,91
+2020,60+,Female,For better mental health/ To de-stress,35
+2020,60+,Female,To look or feel good,29
+2020,60+,Female,To meet other people,12
+2020,60+,Female,For the interest of the sports,11
+2020,60+,Female,Recover from injury or illness,7
+2020,60+,Female,The facilities are near where I live/work/study,5
+2020,60+,Female,To make up for sitting down too much at home / working from home,4
+2020,60+,Female,To create a new exercise routine on top of what I was already doing,4
+2020,60+,Female,Adapted to exercise at home,3
+2020,60+,Male,For better physical health,90
+2020,60+,Male,To look or feel good,24
+2020,60+,Male,For better mental health/ To de-stress,24
+2020,60+,Male,For the interest of the sports,14
+2020,60+,Male,Recover from injury or illness,9
+2020,60+,Male,To meet other people,6
+2020,60+,Male,To create a new exercise routine on top of what I was already doing,4
+2020,60+,Male,Others,3
+2020,60+,Male,Adapted to exercise at home,3
+2020,60+,Male,Have more spare time for sports,3
+2021,13 to 19,Female,For better physical health,70
+2021,13 to 19,Female,For the interest of the sports,46
+2021,13 to 19,Female,To look or feel good,41
+2021,13 to 19,Female,For better mental health/ To de-stress,27
+2021,13 to 19,Female,To make up for sitting down too much at home / working from home,17
+2021,13 to 19,Female,To meet other people,11
+2021,13 to 19,Female,To develop skills that help me perform better at school/work/life in general,11
+2021,13 to 19,Female,To train for an event or competition,10
+2021,13 to 19,Female,The facilities are near where I live/work/study,8
+2021,13 to 19,Female,To distract myself from the current situation,7
+2021,13 to 19,Male,For better physical health,71
+2021,13 to 19,Male,For the interest of the sports,58
+2021,13 to 19,Male,To look or feel good,38
+2021,13 to 19,Male,For better mental health/ To de-stress,27
+2021,13 to 19,Male,To meet other people,15
+2021,13 to 19,Male,To develop skills that help me perform better at school/work/life in general,12
+2021,13 to 19,Male,To make up for sitting down too much at home / working from home,11
+2021,13 to 19,Male,To distract myself from the current situation,10
+2021,13 to 19,Male,To train for an event or competition,10
+2021,13 to 19,Male,The facilities are near where I live/work/study,7
+2021,20 to 39,Female,For better physical health,80
+2021,20 to 39,Female,To look or feel good,46
+2021,20 to 39,Female,For better mental health/ To de-stress,34
+2021,20 to 39,Female,For the interest of the sports,24
+2021,20 to 39,Female,To make up for sitting down too much at home / working from home,13
+2021,20 to 39,Female,Adapted to exercise at home,7
+2021,20 to 39,Female,To distract myself from the current situation,7
+2021,20 to 39,Female,To meet other people,6
+2021,20 to 39,Female,The facilities are near where I live)/work/study,5
+2021,20 to 39,Female,Others,3
+2021,20 to 39,Male,For better physical health,80
+2021,20 to 39,Male,To look or feel good,40
+2021,20 to 39,Male,For the interest of the sports,36
+2021,20 to 39,Male,For better mental health/ To de-stress,32
+2021,20 to 39,Male,To meet other people,11
+2021,20 to 39,Male,To make up for sitting down too much at home / working from home,9
+2021,20 to 39,Male,To distract myself from the current situation,8
+2021,20 to 39,Male,The facilities are near where I live/work/study,8
+2021,20 to 39,Male,To develop skills that help me perform better at school/work/life in general,5
+2021,20 to 39,Male,Able to exercise outside/in gyms again after restrictions have lifted,5
+2021,40 to 59,Female,For better physical health,86
+2021,40 to 59,Female,To look or feel good,37
+2021,40 to 59,Female,For better mental health/ To de-stress,32
+2021,40 to 59,Female,For the interest of the sports,15
+2021,40 to 59,Female,Adapted to exercise at home,8
+2021,40 to 59,Female,To make up for sitting down too much at home / working from home,7
+2021,40 to 59,Female,To meet other people,6
+2021,40 to 59,Female,The facilities are near where I live/work/study,4
+2021,40 to 59,Female,To distract myself from the current situation,4
+2021,40 to 59,Female,Recover from injury or illness,3
+2021,40 to 59,Male,For better physical health,84
+2021,40 to 59,Male,To look or feel good,36
+2021,40 to 59,Male,For better mental health/ To de-stress,29
+2021,40 to 59,Male,For the interest of the sports,24
+2021,40 to 59,Male,To make up for sitting down too much at home / working from home,8
+2021,40 to 59,Male,To meet other people,8
+2021,40 to 59,Male,The facilities are near where I live/work/study,6
+2021,40 to 59,Male,To distract myself from the current situation,3
+2021,40 to 59,Male,To create a new exercise routine on top of what I was already doing,3
+2021,40 to 59,Male,Have more spare time for sports,3
+2021,60+,Female,For better physical health,88
+2021,60+,Female,To look or feel good,23
+2021,60+,Female,For better mental health/ To de-stress,21
+2021,60+,Female,For the interest of the sports,17
+2021,60+,Female,To meet other people,10
+2021,60+,Female,Adapted to exercise at home,10
+2021,60+,Female,Recover from injury or illness,6
+2021,60+,Female,To make up for sitting down too much at home / working from home,4
+2021,60+,Female,To create a new exercise routine on top of what I was already doing,3
+2021,60+,Female,To distract myself from the current situation,3
+2021,60+,Male,For better physical health,88
+2021,60+,Male,To look or feel good,28
+2021,60+,Male,For better mental health/ To de-stress,22
+2021,60+,Male,For the interest of the sports,16
+2021,60+,Male,Adapted to exercise at home,6
+2021,60+,Male,To meet other people,5
+2021,60+,Male,To make up for sitting down too much at home / working from home,4
+2021,60+,Male,To create a new exercise routine on top of what I was already doing,3
+2021,60+,Male,Recover from injury or illness,3
+2021,60+,Male,To distract myself from the current situation,3
+2022,13 to 19,Female,For better physical health,71
+2022,13 to 19,Female,For the interest of the sports,50
+2022,13 to 19,Female,To look or feel good,35
+2022,13 to 19,Female,For better mental health/ To de-stress,34
+2022,13 to 19,Female,To develop skills that help me perform better at school/work/life in general,12
+2022,13 to 19,Female,To make up for sitting down too much at home / working from home,11
+2022,13 to 19,Female,The facilities are near where I live/work/study,9
+2022,13 to 19,Female,To train for an event or competition,9
+2022,13 to 19,Female,To meet other people,8
+2022,13 to 19,Female,To distract myself from the current situation,5
+2022,13 to 19,Male,For better physical health,74
+2022,13 to 19,Male,For the interest of the sports,64
+2022,13 to 19,Male,To look or feel good,32
+2022,13 to 19,Male,For better mental health/ To de-stress,26
+2022,13 to 19,Male,To meet other people,17
+2022,13 to 19,Male,To develop skills that help me perform better at school/work/life in general,15
+2022,13 to 19,Male,To train for an event or competition,9
+2022,13 to 19,Male,The facilities are near where I live/work/study,7
+2022,13 to 19,Male,To distract myself from the current situation,7
+2022,13 to 19,Male,To make up for sitting down too much at home / working from home,7
+2022,20 to 39,Female,For better physical health,76
+2022,20 to 39,Female,For better mental health/ To de-stress,43
+2022,20 to 39,Female,To look or feel good,33
+2022,20 to 39,Female,For the interest of the sports,24
+2022,20 to 39,Female,To make up for sitting down too much at home / working from home,18
+2022,20 to 39,Female,The facilities are near where I live/work/study,13
+2022,20 to 39,Female,To distract myself from the current situation,8
+2022,20 to 39,Female,Adapted to exercise at home,5
+2022,20 to 39,Female,To meet other people,5
+2022,20 to 39,Female,To develop skills that help me perform better at school/work/life in general,3
+2022,20 to 39,Male,For better physical health,75
+2022,20 to 39,Male,For the interest of the sports,40
+2022,20 to 39,Male,For better mental health/ To de-stress,35
+2022,20 to 39,Male,To look or feel good,34
+2022,20 to 39,Male,The facilities are near where I live/work/study,16
+2022,20 to 39,Male,To make up for sitting down too much at home / working from home,13
+2022,20 to 39,Male,To meet other people,12
+2022,20 to 39,Male,To distract myself from the current situation,9
+2022,20 to 39,Male,Have more spare time for sports,4
+2022,20 to 39,Male,To develop skills that help me perform better at school/work/life in general,3
+2022,40 to 59,Female,For better physical health,87
+2022,40 to 59,Female,For better mental health/ To de-stress,37
+2022,40 to 59,Female,To look or feel good,31
+2022,40 to 59,Female,For the interest of the sports,14
+2022,40 to 59,Female,To make up for sitting down too much at home / working from home,13
+2022,40 to 59,Female,The facilities are near where I live/work/study,11
+2022,40 to 59,Female,Adapted to exercise at home,5
+2022,40 to 59,Female,To meet other people,5
+2022,40 to 59,Female,Recover from injury or illness,3
+2022,40 to 59,Female,To distract myself from the current situation,3
+2022,40 to 59,Male,For better physical health,84
+2022,40 to 59,Male,For better mental health/ To de-stress,40
+2022,40 to 59,Male,To look or feel good,24
+2022,40 to 59,Male,For the interest of the sports,22
+2022,40 to 59,Male,The facilities are near where I live/work/study,14
+2022,40 to 59,Male,To make up for sitting down too much at home / working from home,14
+2022,40 to 59,Male,To meet other people,7
+2022,40 to 59,Male,To distract myself from the current situation,6
+2022,40 to 59,Male,Able to exercise outside/in gyms again after restrictions have lifted,4
+2022,40 to 59,Male,Adapted to exercise at home,3
+2022,60+,Female,For better physical health,91
+2022,60+,Female,For better mental health/ To de-stress,21
+2022,60+,Female,To look or feel good,19
+2022,60+,Female,Adapted to exercise at home,12
+2022,60+,Female,For the interest of the sports,10
+2022,60+,Female,To meet other people,8
+2022,60+,Female,Recover from injury or illness,5
+2022,60+,Female,To make up for sitting down too much at home / working from home,4
+2022,60+,Female,The facilities are near where I live/work/study,2
+2022,60+,Female,To create a new exercise routine on top of what I was already doing,2
+2022,60+,Male,For better physical health,89
+2022,60+,Male,For better mental health/ To de-stress,26
+2022,60+,Male,To look or feel good,20
+2022,60+,Male,For the interest of the sports,13
+2022,60+,Male,Recover from injury or illness,6
+2022,60+,Male,The facilities are near where I live/work/study,6
+2022,60+,Male,To make up for sitting down too much at home / working from home,5
+2022,60+,Male,Adapted to exercise at home,5
+2022,60+,Male,To meet other people,3
+2022,60+,Male,To create a new exercise routine on top of what I was already doing,3
+2023,13 to 19,Female,For better physical health,68
+2023,13 to 19,Female,For the interest of the sports,56
+2023,13 to 19,Female,To look or feel good,34
+2023,13 to 19,Female,For better mental health/ To de-stress,29
+2023,13 to 19,Female,To meet other people,15
+2023,13 to 19,Female,To train for an event or competition,10
+2023,13 to 19,Female,To develop skills that help me perform better at school/work/life in general,9
+2023,13 to 19,Female,To make up for sitting down too much at home / working from home,9
+2023,13 to 19,Female,To distract myself from the current situation,7
+2023,13 to 19,Female,The facilities are near where I live/work/study,6
+2023,13 to 19,Male,For the interest of the sports,72
+2023,13 to 19,Male,For better physical health,69
+2023,13 to 19,Male,To look or feel good,27
+2023,13 to 19,Male,For better mental health/ To de-stress,27
+2023,13 to 19,Male,To meet other people,20
+2023,13 to 19,Male,To train for an event or competition,12
+2023,13 to 19,Male,To develop skills that help me perform better at school/work/life in general,10
+2023,13 to 19,Male,To make up for sitting down too much at home / working from home,9
+2023,13 to 19,Male,The facilities are near where I live/work/study,5
+2023,13 to 19,Male,To distract myself from the current situation,5
+2023,20 to 39,Female,For better physical health,65
+2023,20 to 39,Female,For better mental health/ To de-stress,32
+2023,20 to 39,Female,To look or feel good,30
+2023,20 to 39,Female,For the interest of the sports,26
+2023,20 to 39,Female,To make up for sitting down too much at home / working from home,22
+2023,20 to 39,Female,The facilities are near where I live/work/study,16
+2023,20 to 39,Female,To distract myself from the current situation,11
+2023,20 to 39,Female,To meet other people,7
+2023,20 to 39,Female,Have more spare time for sports,4
+2023,20 to 39,Female,Adapted to exercise at home,3
+2023,20 to 39,Male,For better physical health,62
+2023,20 to 39,Male,For the interest of the sports,48
+2023,20 to 39,Male,To look or feel good,36
+2023,20 to 39,Male,For better mental health/ To de-stress,32
+2023,20 to 39,Male,To meet other people,16
+2023,20 to 39,Male,To make up for sitting down too much at home / working from home,14
+2023,20 to 39,Male,The facilities are near where I live/work/study,12
+2023,20 to 39,Male,To distract myself from the current situation,9
+2023,20 to 39,Male,To develop skills that help me perform better at school/work/life in general,5
+2023,20 to 39,Male,Have more spare time for sports,4
+2023,40 to 59,Female,For better physical health,82
+2023,40 to 59,Female,For better mental health/ To de-stress,32
+2023,40 to 59,Female,To look or feel good,25
+2023,40 to 59,Female,To make up for sitting down too much at home / working from home,17
+2023,40 to 59,Female,For the interest of the sports,16
+2023,40 to 59,Female,The facilities are near where I live/work/study,12
+2023,40 to 59,Female,To distract myself from the current situation,5
+2023,40 to 59,Female,Adapted to exercise at home,5
+2023,40 to 59,Female,Have more spare time for sports,4
+2023,40 to 59,Female,To meet other people,4
+2023,40 to 59,Male,For better physical health,74
+2023,40 to 59,Male,For better mental health/ To de-stress,31
+2023,40 to 59,Male,For the interest of the sports,27
+2023,40 to 59,Male,To look or feel good,18
+2023,40 to 59,Male,To make up for sitting down too much at home / working from home,16
+2023,40 to 59,Male,The facilities are near where I live/work/study,13
+2023,40 to 59,Male,To distract myself from the current situation,7
+2023,40 to 59,Male,Have more spare time for sports,7
+2023,40 to 59,Male,To meet other people,7
+2023,40 to 59,Male,To develop skills that help me perform better at school/work/life in general,1
+2023,60+,Female,For better physical health,92
+2023,60+,Female,For better mental health/ To de-stress,27
+2023,60+,Female,Adapted to exercise at home,14
+2023,60+,Female,To look or feel good,13
+2023,60+,Female,For the interest of the sports,11
+2023,60+,Female,To meet other people,8
+2023,60+,Female,To make up for sitting down too much at home / working from home,5
+2023,60+,Female,To create a new exercise routine on top of what I was already doing,4
+2023,60+,Female,The facilities are near where I live/work/study,4
+2023,60+,Female,Recover from injury or illness,4
+2023,60+,Male,For better physical health,90
+2023,60+,Male,For better mental health/ To de-stress,26
+2023,60+,Male,To look or feel good,11
+2023,60+,Male,For the interest of the sports,10
+2023,60+,Male,To make up for sitting down too much at home / working from home,8
+2023,60+,Male,To create a new exercise routine on top of what I was already doing,6
+2023,60+,Male,Adapted to exercise at home,6
+2023,60+,Male,The facilities are near where I live/work/study,5
+2023,60+,Male,To distract myself from the current situation,5
+2023,60+,Male,Recover from injury or illness,4
+2024,13 to 19,Female,For better physical health,72
+2024,13 to 19,Female,For the interest of the sports,54
+2024,13 to 19,Female,To look or feel good,43
+2024,13 to 19,Female,For better mental health/ To de-stress,27
+2024,13 to 19,Female,To meet other people,13
+2024,13 to 19,Female,To make up for sitting down too much at home / working from home,13
+2024,13 to 19,Female,To train for an event or competition,9
+2024,13 to 19,Female,To develop skills that help me perform better at school/work/life in general,8
+2024,13 to 19,Female,Have more spare time for sports,4
+2024,13 to 19,Female,The facilities are near where I live/work/study,4
+2024,13 to 19,Male,For better physical health,68
+2024,13 to 19,Male,For the interest of the sports,65
+2024,13 to 19,Male,To look or feel good,39
+2024,13 to 19,Male,For better mental health/ To de-stress,26
+2024,13 to 19,Male,To meet other people,23
+2024,13 to 19,Male,To train for an event or competition,13
+2024,13 to 19,Male,To develop skills that help me perform better at school/work/life in general,8
+2024,13 to 19,Male,To make up for sitting down too much at home / working from home,6
+2024,13 to 19,Male,The facilities are near where I live/work/study,3
+2024,13 to 19,Male,Have more spare time for sports,3
+2024,20 to 39,Female,For better physical health,71
+2024,20 to 39,Female,To look or feel good,46
+2024,20 to 39,Female,For better mental health/ To de-stress,32
+2024,20 to 39,Female,For the interest of the sports,30
+2024,20 to 39,Female,To make up for sitting down too much at home / working from home,19
+2024,20 to 39,Female,The facilities are near where I live/work/study,9
+2024,20 to 39,Female,To meet other people,8
+2024,20 to 39,Female,Have more spare time for sports,6
+2024,20 to 39,Female,To create a new exercise routine on top of what I was already doing,2
+2024,20 to 39,Female,To develop skills that help me perform better at school/work/life in general,1
+2024,20 to 39,Male,For better physical health,65
+2024,20 to 39,Male,For the interest of the sports,48
+2024,20 to 39,Male,To look or feel good,41
+2024,20 to 39,Male,For better mental health/ To de-stress,31
+2024,20 to 39,Male,To meet other people,15
+2024,20 to 39,Male,To make up for sitting down too much at home / working from home,14
+2024,20 to 39,Male,The facilities are near where I live/work/study,9
+2024,20 to 39,Male,Have more spare time for sports,3
+2024,20 to 39,Male,To train for an event or competition,3
+2024,20 to 39,Male,To develop skills that help me perform better at school/work/life in general,2
+2024,40 to 59,Female,For better physical health,87
+2024,40 to 59,Female,For better mental health/ To de-stress,36
+2024,40 to 59,Female,To look or feel good,35
+2024,40 to 59,Female,For the interest of the sports,17
+2024,40 to 59,Female,To make up for sitting down too much at home / working from home,17
+2024,40 to 59,Female,To meet other people,6
+2024,40 to 59,Female,The facilities are near where I live/work/study,5
+2024,40 to 59,Female,Have more spare time for sports,3
+2024,40 to 59,Female,To create a new exercise routine on top of what I was already doing,2
+2024,40 to 59,Female,Recover from injury or illness,2
+2024,40 to 59,Male,For better physical health,76
+2024,40 to 59,Male,For better mental health/ To de-stress,37
+2024,40 to 59,Male,To look or feel good,26
+2024,40 to 59,Male,For the interest of the sports,25
+2024,40 to 59,Male,To make up for sitting down too much at home / working from home,20
+2024,40 to 59,Male,The facilities are near where I live/work/study,10
+2024,40 to 59,Male,To meet other people,7
+2024,40 to 59,Male,Have more spare time for sports,3
+2024,40 to 59,Male,To create a new exercise routine on top of what I was already doing,2
+2024,40 to 59,Male,Recover from injury or illness,1
+2024,60+,Female,For better physical health,93
+2024,60+,Female,For better mental health/ To de-stress,29
+2024,60+,Female,To look or feel good,21
+2024,60+,Female,For the interest of the sports,11
+2024,60+,Female,To make up for sitting down too much at home / working from home,10
+2024,60+,Female,To create a new exercise routine on top of what I was already doing,9
+2024,60+,Female,To meet other people,8
+2024,60+,Female,Recover from injury or illness,4
+2024,60+,Female,The facilities are near where I live/work/study,3
+2024,60+,Female,Have more spare time for sports,1
+2024,60+,Male,For better physical health,93
+2024,60+,Male,For better mental health/ To de-stress,27
+2024,60+,Male,To look or feel good,18
+2024,60+,Male,For the interest of the sports,12
+2024,60+,Male,To make up for sitting down too much at home / working from home,11
+2024,60+,Male,To meet other people,8
+2024,60+,Male,To create a new exercise routine on top of what I was already doing,7
+2024,60+,Male,Recover from injury or illness,4
+2024,60+,Male,The facilities are near where I live/work/study,2
+2024,60+,Male,Have more spare time for sports,1
+2025,13 -19,Female,For better physical health,74
+2025,13 -19,Female,For the interest of the sports,59
+2025,13 -19,Female,To look or feel good,45
+2025,13 -19,Female,For better mental health/ To de-stress,30
+2025,13 -19,Female,To meet other people/Social reasons,13
+2025,13 -19,Female,To make up for sitting down too much at home / working from home,7
+2025,13 -19,Female,To train for an event or competition,6
+2025,13 -19,Female,"To develop skills that help me perform better at school, work, or life in general",5
+2025,13 -19,Female,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",3
+2025,13 -19,Female,The facilities are near where I live/work/study,2
+2025,13 -19,Male,For better physical health,74
+2025,13 -19,Male,For the interest of the sports,66
+2025,13 -19,Male,To look or feel good,42
+2025,13 -19,Male,For better mental health/ To de-stress,29
+2025,13 -19,Male,To meet other people/Social reasons,17
+2025,13 -19,Male,To train for an event or competition,8
+2025,13 -19,Male,To make up for sitting down too much at home / working from home,4
+2025,13 -19,Male,"To develop skills that help me perform better at school, work, or life in general",4
+2025,13 -19,Male,The facilities are near where I live/work/study,4
+2025,13 -19,Male,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",3
+2025,20 - 39,Female,For better physical health,82
+2025,20 - 39,Female,To look or feel good,61
+2025,20 - 39,Female,For better mental health/ To de-stress,39
+2025,20 - 39,Female,For the interest of the sports,34
+2025,20 - 39,Female,To meet other people/Social reasons,9
+2025,20 - 39,Female,To make up for sitting down too much at home / working from home,7
+2025,20 - 39,Female,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",4
+2025,20 - 39,Female,The facilities are near where I live/work/study,3
+2025,20 - 39,Female,"To develop skills that help me perform better at school, work, or life in general",3
+2025,20 - 39,Female,To create a new exercise routine on top of what I was already doing,3
+2025,20 - 39,Male,For better physical health,83
+2025,20 - 39,Male,To look or feel good,53
+2025,20 - 39,Male,For the interest of the sports,50
+2025,20 - 39,Male,For better mental health/ To de-stress,37
+2025,20 - 39,Male,To meet other people/Social reasons,12
+2025,20 - 39,Male,To make up for sitting down too much at home / working from home,6
+2025,20 - 39,Male,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",4
+2025,20 - 39,Male,To train for an event or competition,3
+2025,20 - 39,Male,"To develop skills that help me perform better at school, work, or life in general",3
+2025,20 - 39,Male,Recover from injury or illness,2
+2025,40 - 59,Female,For better physical health,86
+2025,40 - 59,Female,To look or feel good,50
+2025,40 - 59,Female,For better mental health/ To de-stress,44
+2025,40 - 59,Female,For the interest of the sports,30
+2025,40 - 59,Female,To make up for sitting down too much at home / working from home,10
+2025,40 - 59,Female,To meet other people/Social reasons,7
+2025,40 - 59,Female,Recover from injury or illness,3
+2025,40 - 59,Female,To create a new exercise routine on top of what I was already doing,3
+2025,40 - 59,Female,The facilities are near where I live/work/study,3
+2025,40 - 59,Female,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",2
+2025,40 - 59,Male,For better physical health,84
+2025,40 - 59,Male,To look or feel good,44
+2025,40 - 59,Male,For better mental health/ To de-stress,40
+2025,40 - 59,Male,For the interest of the sports,32
+2025,40 - 59,Male,To meet other people/Social reasons,11
+2025,40 - 59,Male,To make up for sitting down too much at home / working from home,6
+2025,40 - 59,Male,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",4
+2025,40 - 59,Male,Recover from injury or illness,4
+2025,40 - 59,Male,To create a new exercise routine on top of what I was already doing,3
+2025,40 - 59,Male,The facilities are near where I live/work/study,2
+2025,60+,Female,For better physical health,89
+2025,60+,Female,To look or feel good,36
+2025,60+,Female,For better mental health/ To de-stress,29
+2025,60+,Female,For the interest of the sports,26
+2025,60+,Female,To meet other people/Social reasons,8
+2025,60+,Female,To create a new exercise routine on top of what I was already doing,7
+2025,60+,Female,Recover from injury or illness,6
+2025,60+,Female,To make up for sitting down too much at home / working from home,5
+2025,60+,Female,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",2
+2025,60+,Female,The facilities are near where I live/work/study,2
+2025,60+,Male,For better physical health,86
+2025,60+,Male,To look or feel good,38
+2025,60+,Male,For better mental health/ To de-stress,29
+2025,60+,Male,For the interest of the sports,17
+2025,60+,Male,To meet other people/Social reasons,9
+2025,60+,Male,To create a new exercise routine on top of what I was already doing,6
+2025,60+,Male,To make up for sitting down too much at home / working from home,6
+2025,60+,Male,Recover from injury or illness,3
+2025,60+,Male,"Have more spare time for sports (e.g. fewer family/ work/ study commitments, etc.)",2
+2025,60+,Male,There are new facilities which previously were not available,1

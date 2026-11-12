@@ -1,0 +1,556 @@
+Year,AgeGroup,Sex,Barriers,Percentage
+2019,13 - 19,Female,I prefer spending time on other activity,50
+2019,13 - 19,Female,I am studying and working (part-time/full-time),33
+2019,13 - 19,Female,I am too busy with schoolwork/school’s activities,26
+2019,13 - 19,Female,I do not think I am good enough at sport,21
+2019,13 - 19,Female,The weather in Singapore is too hard to predict/forecast for sport activity,9
+2019,13 - 19,Female,The weather in Singapore is too hot for doing sport,5
+2019,13 - 19,Female,The facility that I prefer are always fully booked,3
+2019,13 - 19,Female,I do not have anyone to play with,2
+2019,13 - 19,Male,I prefer spending time on other activity,27
+2019,13 - 19,Male,I am too busy with schoolwork/school’s activities,22
+2019,13 - 19,Male,I do not think I am good enough at sport,19
+2019,13 - 19,Male,I do not have anyone to play with,18
+2019,13 - 19,Male,I am studying and working (part-time/full-time),14
+2019,13 - 19,Male,Others,5
+2019,13 - 19,Male,Lack of specialised coaches,5
+2019,13 - 19,Male,My personal health condition is not suitable for sport,4
+2019,13 - 19,Male,The weather in Singapore is too hot for doing sport,4
+2019,20 - 39,Female,I need to take care of family members (elderly or children),33
+2019,20 - 39,Female,I prefer spending time on other activity,31
+2019,20 - 39,Female,I am too busy working overtime,27
+2019,20 - 39,Female,I do not have anyone to play with,11
+2019,20 - 39,Female,The weather in Singapore is too hot for doing sport,9
+2019,20 - 39,Female,I am studying and working (part-time/full-time),6
+2019,20 - 39,Female,Others,5
+2019,20 - 39,Female,I am too busy working for more than one job,5
+2019,20 - 39,Female,I do not think I am good enough at sport,4
+2019,20 - 39,Female,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",4
+2019,20 - 39,Male,I am too busy working overtime,37
+2019,20 - 39,Male,I prefer spending time on other activity,25
+2019,20 - 39,Male,I am too busy working for more than one job,10
+2019,20 - 39,Male,I need to take care of family members (elderly or children),8
+2019,20 - 39,Male,The weather in Singapore is too hot for doing sport,8
+2019,20 - 39,Male,My personal health condition is not suitable for sport,7
+2019,20 - 39,Male,Others,7
+2019,20 - 39,Male,I do not have anyone to play with,6
+2019,20 - 39,Male,I do not think I am good enough at sport,5
+2019,20 - 39,Male,I am too busy with schoolwork/school’s activities,5
+2019,40 - 59,Female,I prefer spending time on other activity,31
+2019,40 - 59,Female,I need to take care of family members (elderly or children),24
+2019,40 - 59,Female,I am too busy working overtime,20
+2019,40 - 59,Female,I do not think I am good enough at sport,14
+2019,40 - 59,Female,I am too old for sport,13
+2019,40 - 59,Female,My personal health condition is not suitable for sport,12
+2019,40 - 59,Female,The weather in Singapore is too hot for doing sport,9
+2019,40 - 59,Female,Others,8
+2019,40 - 59,Female,I am too busy working for more than one job,3
+2019,40 - 59,Female,I do not have anyone to play with,2
+2019,40 - 59,Male,I am too busy working overtime,46
+2019,40 - 59,Male,I prefer spending time on other activity,27
+2019,40 - 59,Male,I need to take care of family members (elderly or children),14
+2019,40 - 59,Male,My personal health condition is not suitable for sport,10
+2019,40 - 59,Male,I am too old for sport,8
+2019,40 - 59,Male,I do not think I am good enough at sport,7
+2019,40 - 59,Male,Others,6
+2019,40 - 59,Male,The weather in Singapore is too hot for doing sport,6
+2019,40 - 59,Male,I am too busy working for more than one job,6
+2019,40 - 59,Male,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",2
+2019,60+,Female,I am too old for sport,48
+2019,60+,Female,My personal health condition is not suitable for sport,32
+2019,60+,Female,I need to take care of family members (elderly or children),16
+2019,60+,Female,I prefer spending time on other activity,13
+2019,60+,Female,I am too busy working overtime,9
+2019,60+,Female,I do not think I am good enough at sport,8
+2019,60+,Female,Others,6
+2019,60+,Female,The weather in Singapore is too hot for doing sport,2
+2019,60+,Female,I am too busy working for more than one job,2
+2019,60+,Female,I do not have anyone to play with,1
+2019,60+,Male,I am too old for sport,44
+2019,60+,Male,My personal health condition is not suitable for sport,27
+2019,60+,Male,I prefer spending time on other activity,24
+2019,60+,Male,I am too busy working overtime,11
+2019,60+,Male,Others,11
+2019,60+,Male,I do not think I am good enough at sport,7
+2019,60+,Male,I need to take care of family members (elderly or children),5
+2019,60+,Male,The weather in Singapore is too hot for doing sport,3
+2019,60+,Male,I am too busy working for more than one job,1
+2019,60+,Male,I do not have anyone to play with,1
+2020,13 - 19,Female,Others,46
+2020,13 - 19,Female,I prefer spending time on other activity,26
+2020,13 - 19,Female,I am too busy with schoolwork/school’s activities,25
+2020,13 - 19,Female,The facility that I prefer is too far from where I live/work/study,9
+2020,13 - 19,Female,The programme fees/coaching fee is too high,7
+2020,13 - 19,Female,I need to take care of family members (elderly or children),3
+2020,13 - 19,Female,The weather in Singapore is too hot for doing sport,3
+2020,13 - 19,Female,I am studying and working (part-time/full-time),3
+2020,13 - 19,Female,The weather in Singapore is too hard to predict/forecast for sport activity,3
+2020,13 - 19,Female,I can no longer go outdoor,3
+2020,13 - 19,Male,Others,67
+2020,13 - 19,Male,I am too busy with schoolwork/school’s activities,19
+2020,13 - 19,Male,I do not have anyone to play with,12
+2020,13 - 19,Male,I can no longer go outdoor,11
+2020,13 - 19,Male,The facility that I prefer is too far from where I live/work/study,11
+2020,13 - 19,Male,The programme fees/coaching fee is too high,10
+2020,13 - 19,Male,The equipment is too costly,10
+2020,13 - 19,Male,I am too old for sport,6
+2020,13 - 19,Male,The weather in Singapore is too hard to predict/forecast for sport activity,5
+2020,13 - 19,Male,I need to take care of family members (elderly or children),4
+2020,20 - 39,Female,Others,44
+2020,20 - 39,Female,I am too busy working overtime,29
+2020,20 - 39,Female,I need to take care of family members (elderly or children),27
+2020,20 - 39,Female,I prefer spending time on other activity,13
+2020,20 - 39,Female,My personal health condition is not suitable for sport,7
+2020,20 - 39,Female,I do not have anyone to play with,6
+2020,20 - 39,Female,I am studying and working (part-time/full-time),6
+2020,20 - 39,Female,I can no longer go outdoor,5
+2020,20 - 39,Female,I am too busy working for more than one job,4
+2020,20 - 39,Female,The weather in Singapore is too hot for doing sport,3
+2020,20 - 39,Male,Others,39
+2020,20 - 39,Male,I am too busy working overtime,36
+2020,20 - 39,Male,I need to take care of family members (elderly or children),14
+2020,20 - 39,Male,I can no longer go outdoor,8
+2020,20 - 39,Male,I prefer spending time on other activity,6
+2020,20 - 39,Male,I am studying and working (part-time/full-time),6
+2020,20 - 39,Male,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",6
+2020,20 - 39,Male,My personal health condition is not suitable for sport,4
+2020,20 - 39,Male,I am too busy working for more than one job,4
+2020,20 - 39,Male,I do not have anyone to play with,2
+2020,40 - 59,Female,Others,40
+2020,40 - 59,Female,I need to take care of family members (elderly or children),28
+2020,40 - 59,Female,I prefer spending time on other activity,27
+2020,40 - 59,Female,I am too busy working overtime,20
+2020,40 - 59,Female,I can no longer go outdoor,5
+2020,40 - 59,Female,I am too busy working for more than one job,4
+2020,40 - 59,Female,Less motivation to do exercise,3
+2020,40 - 59,Female,My personal health condition is not suitable for sport,3
+2020,40 - 59,Female,I do not think I am good enough at sport,3
+2020,40 - 59,Female,The weather in Singapore is too hot for doing sport,3
+2020,40 - 59,Male,I am too busy working overtime,34
+2020,40 - 59,Male,Others,33
+2020,40 - 59,Male,I prefer spending time on other activity,16
+2020,40 - 59,Male,I need to take care of family members (elderly or children),14
+2020,40 - 59,Male,My personal health condition is not suitable for sport,9
+2020,40 - 59,Male,I am too busy working for more than one job,7
+2020,40 - 59,Male,I am studying and working (part-time/full-time),4
+2020,40 - 59,Male,I can no longer go outdoor,4
+2020,40 - 59,Male,I do not think I am good enough at sport,3
+2020,40 - 59,Male,I am too old for sport,2
+2020,60+,Female,Others,31
+2020,60+,Female,I prefer spending time on other activity,17
+2020,60+,Female,I am too old for sport,16
+2020,60+,Female,My personal health condition is not suitable for sport,15
+2020,60+,Female,I need to take care of family members (elderly or children),14
+2020,60+,Female,I can no longer go outdoor,12
+2020,60+,Female,I am too busy working overtime,9
+2020,60+,Female,Less motivation to do exercise,4
+2020,60+,Female,I do not have anyone to play with,3
+2020,60+,Female,I do not think I am good enough at sport,2
+2020,60+,Male,Others,35
+2020,60+,Male,I am too old for sport,25
+2020,60+,Male,I prefer spending time on other activity,17
+2020,60+,Male,I am too busy working overtime,13
+2020,60+,Male,My personal health condition is not suitable for sport,13
+2020,60+,Male,I can no longer go outdoor,11
+2020,60+,Male,I need to take care of family members (elderly or children),6
+2020,60+,Male,I am too busy working for more than one job,5
+2020,60+,Male,Less motivation to do exercise,3
+2020,60+,Male,I do not think I am good enough at sport,3
+2021,13 - 19,Female,Less motivation to do exercise,37
+2021,13 - 19,Female,Too stressed to exercise,35
+2021,13 - 19,Female,Scared or worried to go out,35
+2021,13 - 19,Female,I prefer spending time on other activity,34
+2021,13 - 19,Female,I am too busy with schoolwork/school’s activities,34
+2021,13 - 19,Female,Others,29
+2021,13 - 19,Female,I am studying and working (part-time/full-time),10
+2021,13 - 19,Female,I do not have anyone to play with,7
+2021,13 - 19,Female,The facility that I prefer are always fully booked,5
+2021,13 - 19,Female,I am too busy working overtime,4
+2021,13 - 19,Male,Less motivation to do exercise,43
+2021,13 - 19,Male,Scared or worried to go out,43
+2021,13 - 19,Male,I prefer spending time on other activity,35
+2021,13 - 19,Male,Too stressed to exercise,33
+2021,13 - 19,Male,Others,24
+2021,13 - 19,Male,I am too busy with schoolwork/school’s activities,14
+2021,13 - 19,Male,I do not have anyone to play with,5
+2021,13 - 19,Male,I need to take care of family members (elderly or children),4
+2021,13 - 19,Male,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",4
+2021,13 - 19,Male,The facility that I prefer are always fully booked,4
+2021,20 - 39,Female,Less motivation to do exercise,36
+2021,20 - 39,Female,Scared or worried to go out,35
+2021,20 - 39,Female,I prefer spending time on other activity,33
+2021,20 - 39,Female,Too stressed to exercise,33
+2021,20 - 39,Female,I need to take care of family members (elderly or children),31
+2021,20 - 39,Female,I am too busy working overtime,23
+2021,20 - 39,Female,Others,19
+2021,20 - 39,Female,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",5
+2021,20 - 39,Female,I do not have anyone to play with,4
+2021,20 - 39,Female,I am too busy with schoolwork/school’s activities,3
+2021,20 - 39,Male,I prefer spending time on other activity,37
+2021,20 - 39,Male,Scared or worried to go out,30
+2021,20 - 39,Male,Less motivation to do exercise,29
+2021,20 - 39,Male,I am too busy working overtime,28
+2021,20 - 39,Male,Too stressed to exercise,28
+2021,20 - 39,Male,Others,14
+2021,20 - 39,Male,I need to take care of family members (elderly or children),13
+2021,20 - 39,Male,I do not have anyone to play with,9
+2021,20 - 39,Male,I am too busy with schoolwork/school’s activities,9
+2021,20 - 39,Male,I am too busy working for more than one job,4
+2021,40 - 59,Female,I prefer spending time on other activity,41
+2021,40 - 59,Female,Less motivation to do exercise,28
+2021,40 - 59,Female,Scared or worried to go out,28
+2021,40 - 59,Female,I need to take care of family members (elderly or children),27
+2021,40 - 59,Female,Too stressed to exercise,27
+2021,40 - 59,Female,I am too busy working overtime,18
+2021,40 - 59,Female,Others,16
+2021,40 - 59,Female,My personal health condition is not suitable for sport,9
+2021,40 - 59,Female,I do not think I am good enough at sport,4
+2021,40 - 59,Female,I do not have anyone to play with,4
+2021,40 - 59,Male,I prefer spending time on other activity,39
+2021,40 - 59,Male,Less motivation to do exercise,33
+2021,40 - 59,Male,I am too busy working overtime,31
+2021,40 - 59,Male,Too stressed to exercise,31
+2021,40 - 59,Male,Scared or worried to go out,31
+2021,40 - 59,Male,Others,17
+2021,40 - 59,Male,I need to take care of family members (elderly or children),11
+2021,40 - 59,Male,My personal health condition is not suitable for sport,6
+2021,40 - 59,Male,I do not have anyone to play with,3
+2021,40 - 59,Male,I do not think I am good enough at sport,2
+2021,60+,Female,I prefer spending time on other activity,37
+2021,60+,Female,Scared or worried to go out,35
+2021,60+,Female,Too stressed to exercise,26
+2021,60+,Female,Less motivation to do exercise,25
+2021,60+,Female,I am too old for sport,24
+2021,60+,Female,My personal health condition is not suitable for sport,15
+2021,60+,Female,I need to take care of family members (elderly or children),12
+2021,60+,Female,Others,11
+2021,60+,Female,I do not have anyone to play with,5
+2021,60+,Female,I am too busy working overtime,4
+2021,60+,Male,I prefer spending time on other activity,41
+2021,60+,Male,Scared or worried to go out,29
+2021,60+,Male,Less motivation to do exercise,28
+2021,60+,Male,Too stressed to exercise,27
+2021,60+,Male,My personal health condition is not suitable for sport,18
+2021,60+,Male,I am too old for sport,16
+2021,60+,Male,I am too busy working overtime,12
+2021,60+,Male,Others,6
+2021,60+,Male,I do not think I am good enough at sport,5
+2021,60+,Male,I need to take care of family members (elderly or children),4
+2022,13 - 19,Female,I prefer spending time on other activity,42
+2022,13 - 19,Female,I am too busy with schoolwork/school’s activities,28
+2022,13 - 19,Female,Less motivation to do exercise,18
+2022,13 - 19,Female,Others,14
+2022,13 - 19,Female,I am studying and working (part-time/full-time),14
+2022,13 - 19,Female,The weather in Singapore is too hot for doing sport,12
+2022,13 - 19,Female,Too stressed to exercise,5
+2022,13 - 19,Female,I do not think I am good enough at sport,5
+2022,13 - 19,Female,Scared or worried to go out,4
+2022,13 - 19,Female,The weather in Singapore is too hard to predict/forecast for sport activity,4
+2022,13 - 19,Male,I prefer spending time on other activity,48
+2022,13 - 19,Male,I am too busy with schoolwork/school’s activities,39
+2022,13 - 19,Male,Less motivation to do exercise,15
+2022,13 - 19,Male,I am studying and working (part-time/full-time),13
+2022,13 - 19,Male,My personal health condition is not suitable for sport,6
+2022,13 - 19,Male,Too stressed to exercise,5
+2022,13 - 19,Male,Others,4
+2022,13 - 19,Male,I do not have anyone to play with,3
+2022,13 - 19,Male,The weather in Singapore is too hot for doing sport,2
+2022,20 - 39,Female,I prefer spending time on other activity,43
+2022,20 - 39,Female,I need to take care of family members (elderly or children),35
+2022,20 - 39,Female,I am too busy working overtime,22
+2022,20 - 39,Female,Less motivation to do exercise,12
+2022,20 - 39,Female,Others,10
+2022,20 - 39,Female,My personal health condition is not suitable for sport,7
+2022,20 - 39,Female,I do not think I am good enough at sport,7
+2022,20 - 39,Female,Too stressed to exercise,4
+2022,20 - 39,Female,Scared or worried to go out,3
+2022,20 - 39,Female,The weather in Singapore is too hot for doing sport,2
+2022,20 - 39,Male,I prefer spending time on other activity,48
+2022,20 - 39,Male,I am too busy working overtime,29
+2022,20 - 39,Male,I need to take care of family members (elderly or children),19
+2022,20 - 39,Male,Less motivation to do exercise,10
+2022,20 - 39,Male,I am too busy working for more than one job,7
+2022,20 - 39,Male,Others,6
+2022,20 - 39,Male,Too stressed to exercise,6
+2022,20 - 39,Male,I do not think I am good enough at sport,6
+2022,20 - 39,Male,Scared or worried to go out,4
+2022,20 - 39,Male,I am too busy with schoolwork/school’s activities,3
+2022,40 - 59,Female,I prefer spending time on other activity,58
+2022,40 - 59,Female,I am too busy working overtime,21
+2022,40 - 59,Female,I need to take care of family members (elderly or children),21
+2022,40 - 59,Female,Less motivation to do exercise,16
+2022,40 - 59,Female,Others,9
+2022,40 - 59,Female,I do not think I am good enough at sport,8
+2022,40 - 59,Female,Too stressed to exercise,4
+2022,40 - 59,Female,The weather in Singapore is too hot for doing sport,4
+2022,40 - 59,Female,My personal health condition is not suitable for sport,2
+2022,40 - 59,Female,Scared or worried to go out,2
+2022,40 - 59,Male,I prefer spending time on other activity,57
+2022,40 - 59,Male,I am too busy working overtime,32
+2022,40 - 59,Male,I need to take care of family members (elderly or children),12
+2022,40 - 59,Male,Less motivation to do exercise,11
+2022,40 - 59,Male,I do not think I am good enough at sport,6
+2022,40 - 59,Male,Others,4
+2022,40 - 59,Male,My personal health condition is not suitable for sport,3
+2022,40 - 59,Male,I am too old for sport,3
+2022,40 - 59,Male,I am too busy working for more than one job,3
+2022,40 - 59,Male,Too stressed to exercise,2
+2022,60+,Female,I prefer spending time on other activity,44
+2022,60+,Female,I am too old for sport,27
+2022,60+,Female,My personal health condition is not suitable for sport,17
+2022,60+,Female,I do not think I am good enough at sport,10
+2022,60+,Female,I need to take care of family members (elderly or children),8
+2022,60+,Female,Less motivation to do exercise,7
+2022,60+,Female,Others,7
+2022,60+,Female,I am too busy working overtime,6
+2022,60+,Female,Scared or worried to go out,5
+2022,60+,Male,I prefer spending time on other activity,43
+2022,60+,Male,I am too old for sport,29
+2022,60+,Male,My personal health condition is not suitable for sport,16
+2022,60+,Male,Less motivation to do exercise,14
+2022,60+,Male,I am too busy working overtime,9
+2022,60+,Male,Others,9
+2022,60+,Male,Scared or worried to go out,7
+2022,60+,Male,I do not think I am good enough at sport,6
+2022,60+,Male,I need to take care of family members (elderly or children),4
+2022,60+,Male,Too stressed to exercise,4
+2023,13 - 19,Female,I prefer spending time on other activity,43
+2023,13 - 19,Female,I am too busy with schoolwork/school’s activities,36
+2023,13 - 19,Female,Less motivation to do exercise,21
+2023,13 - 19,Female,I do not have anyone to play with,13
+2023,13 - 19,Female,Others,10
+2023,13 - 19,Female,I am too busy working overtime,9
+2023,13 - 19,Female,The weather in Singapore is too hot for doing sport,7
+2023,13 - 19,Female,I am studying and working (part-time/full-time),5
+2023,13 - 19,Female,Too stressed to exercise,4
+2023,13 - 19,Female,I am too busy working for more than one job,3
+2023,13 - 19,Male,I am too busy with schoolwork/school’s activities,43
+2023,13 - 19,Male,I prefer spending time on other activity,32
+2023,13 - 19,Male,Less motivation to do exercise,26
+2023,13 - 19,Male,Others,8
+2023,13 - 19,Male,The weather in Singapore is too hot for doing sport,6
+2023,13 - 19,Male,I do not have anyone to play with,6
+2023,13 - 19,Male,I am too busy working overtime,5
+2023,13 - 19,Male,I am studying and working (part-time/full-time),4
+2023,13 - 19,Male,I do not think I am good enough at sport,3
+2023,13 - 19,Male,The weather in Singapore is too hard to predict/forecast for sport activity,3
+2023,20 - 39,Female,I prefer spending time on other activity,36
+2023,20 - 39,Female,I need to take care of family members (elderly or children),33
+2023,20 - 39,Female,I am too busy working overtime,25
+2023,20 - 39,Female,Less motivation to do exercise,23
+2023,20 - 39,Female,I do not think I am good enough at sport,8
+2023,20 - 39,Female,The weather in Singapore is too hot for doing sport,6
+2023,20 - 39,Female,My personal health condition is not suitable for sport,5
+2023,20 - 39,Female,I am too busy working for more than one job,5
+2023,20 - 39,Female,I do not have anyone to play with,5
+2023,20 - 39,Female,Others,4
+2023,20 - 39,Male,I prefer spending time on other activity,50
+2023,20 - 39,Male,I am too busy working overtime,39
+2023,20 - 39,Male,I need to take care of family members (elderly or children),27
+2023,20 - 39,Male,Less motivation to do exercise,14
+2023,20 - 39,Male,I do not have anyone to play with,5
+2023,20 - 39,Male,Too stressed to exercise,3
+2023,20 - 39,Male,I am too busy working for more than one job,3
+2023,20 - 39,Male,Others,2
+2023,20 - 39,Male,I am too busy with schoolwork/school’s activities,2
+2023,20 - 39,Male,The facility that I prefer are always fully booked,2
+2023,40 - 59,Female,I prefer spending time on other activity,44
+2023,40 - 59,Female,I need to take care of family members (elderly or children),25
+2023,40 - 59,Female,I am too busy working overtime,22
+2023,40 - 59,Female,Less motivation to do exercise,19
+2023,40 - 59,Female,I do not think I am good enough at sport,7
+2023,40 - 59,Female,Too stressed to exercise,6
+2023,40 - 59,Female,The weather in Singapore is too hot for doing sport,5
+2023,40 - 59,Female,I am too old for sport,4
+2023,40 - 59,Female,The weather in Singapore is too hard to predict/forecast for sport activity,4
+2023,40 - 59,Female,My personal health condition is not suitable for sport,3
+2023,40 - 59,Male,I am too busy working overtime,46
+2023,40 - 59,Male,I prefer spending time on other activity,36
+2023,40 - 59,Male,Less motivation to do exercise,19
+2023,40 - 59,Male,I need to take care of family members (elderly or children),13
+2023,40 - 59,Male,My personal health condition is not suitable for sport,10
+2023,40 - 59,Male,I am too old for sport,6
+2023,40 - 59,Male,Too stressed to exercise,6
+2023,40 - 59,Male,I do not think I am good enough at sport,6
+2023,40 - 59,Male,Others,4
+2023,40 - 59,Male,I am too busy working for more than one job,2
+2023,60+,Female,I prefer spending time on other activity,42
+2023,60+,Female,My personal health condition is not suitable for sport,28
+2023,60+,Female,I am too old for sport,25
+2023,60+,Female,I need to take care of family members (elderly or children),12
+2023,60+,Female,I am too busy working overtime,8
+2023,60+,Female,Less motivation to do exercise,7
+2023,60+,Female,I do not think I am good enough at sport,5
+2023,60+,Female,Others,4
+2023,60+,Female,Too stressed to exercise,4
+2023,60+,Female,The weather in Singapore is too hard to predict/forecast for sport activity,3
+2023,60+,Male,I prefer spending time on other activity,33
+2023,60+,Male,I am too old for sport,32
+2023,60+,Male,My personal health condition is not suitable for sport,27
+2023,60+,Male,Less motivation to do exercise,13
+2023,60+,Male,I am too busy working overtime,9
+2023,60+,Male,I do not think I am good enough at sport,9
+2023,60+,Male,I need to take care of family members (elderly or children),5
+2023,60+,Male,Others,5
+2023,60+,Male,Too stressed to exercise,5
+2023,60+,Male,I do not have anyone to play with,3
+2024,13 - 19,Female,I am too busy with schoolwork/school’s activities,60
+2024,13 - 19,Female,Less motivation to do exercise,22
+2024,13 - 19,Female,I am studying and working (part-time/full-time),17
+2024,13 - 19,Female,I prefer spending time on other activity,10
+2024,13 - 19,Female,My personal health condition is not suitable for sport,5
+2024,13 - 19,Female,The weather in Singapore is too hot for doing sport,5
+2024,13 - 19,Female,I do not have anyone to play with,4
+2024,13 - 19,Female,The facility that I prefer are always fully booked,3
+2024,13 - 19,Female,Too stressed to exercise,2
+2024,13 - 19,Female,The weather in Singapore is too hard to predict/forecast for sport activity,2
+2024,13 - 19,Male,I am too busy with schoolwork/school’s activities,48
+2024,13 - 19,Male,Less motivation to do exercise,21
+2024,13 - 19,Male,I do not have anyone to play with,13
+2024,13 - 19,Male,I prefer spending time on other activity,10
+2024,13 - 19,Male,I am studying and working (part-time/full-time),8
+2024,13 - 19,Male,My personal health condition is not suitable for sport,7
+2024,13 - 19,Male,Others,7
+2024,13 - 19,Male,Too stressed to exercise,5
+2024,13 - 19,Male,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",4
+2024,13 - 19,Male,The weather in Singapore is too hard to predict/forecast for sport activity,3
+2024,20 - 39,Female,I need to take care of family members (elderly or children),48
+2024,20 - 39,Female,I am too busy working overtime,35
+2024,20 - 39,Female,Less motivation to do exercise,23
+2024,20 - 39,Female,I prefer spending time on other activity,7
+2024,20 - 39,Female,My personal health condition is not suitable for sport,6
+2024,20 - 39,Female,I am too busy working for more than one job,6
+2024,20 - 39,Female,Others,5
+2024,20 - 39,Female,The weather in Singapore is too hot for doing sport,5
+2024,20 - 39,Female,I do not have anyone to play with,5
+2024,20 - 39,Female,I am too busy with schoolwork/school’s activities,4
+2024,20 - 39,Male,I am too busy working overtime,56
+2024,20 - 39,Male,I need to take care of family members (elderly or children),32
+2024,20 - 39,Male,Less motivation to do exercise,13
+2024,20 - 39,Male,My personal health condition is not suitable for sport,8
+2024,20 - 39,Male,I prefer spending time on other activity,7
+2024,20 - 39,Male,I am too busy working for more than one job,6
+2024,20 - 39,Male,Others,5
+2024,20 - 39,Male,I do not have anyone to play with,5
+2024,20 - 39,Male,Too stressed to exercise,3
+2024,20 - 39,Male,I do not think I am good enough at sport,2
+2024,40 - 59,Female,I need to take care of family members (elderly or children),46
+2024,40 - 59,Female,I am too busy working overtime,27
+2024,40 - 59,Female,Less motivation to do exercise,26
+2024,40 - 59,Female,I prefer spending time on other activity,10
+2024,40 - 59,Female,The weather in Singapore is too hot for doing sport,8
+2024,40 - 59,Female,My personal health condition is not suitable for sport,7
+2024,40 - 59,Female,I do not think I am good enough at sport,6
+2024,40 - 59,Female,Too stressed to exercise,5
+2024,40 - 59,Female,I am too busy working for more than one job,4
+2024,40 - 59,Female,Others,3
+2024,40 - 59,Male,I am too busy working overtime,44
+2024,40 - 59,Male,I need to take care of family members (elderly or children),20
+2024,40 - 59,Male,My personal health condition is not suitable for sport,20
+2024,40 - 59,Male,Less motivation to do exercise,18
+2024,40 - 59,Male,I prefer spending time on other activity,10
+2024,40 - 59,Male,The weather in Singapore is too hot for doing sport,9
+2024,40 - 59,Male,I am too busy working for more than one job,9
+2024,40 - 59,Male,Too stressed to exercise,5
+2024,40 - 59,Male,The weather in Singapore is too hard to predict/forecast for sport activity,5
+2024,40 - 59,Male,I do not have anyone to play with,4
+2024,60+,Female,I am too old for sport,39
+2024,60+,Female,My personal health condition is not suitable for sport,34
+2024,60+,Female,Less motivation to do exercise,18
+2024,60+,Female,I need to take care of family members (elderly or children),16
+2024,60+,Female,I do not think I am good enough at sport,6
+2024,60+,Female,I prefer spending time on other activity,5
+2024,60+,Female,I am too busy working overtime,3
+2024,60+,Female,Others,3
+2024,60+,Female,Too stressed to exercise,3
+2024,60+,Female,I do not have anyone to play with,3
+2024,60+,Male,I am too old for sport,37
+2024,60+,Male,My personal health condition is not suitable for sport,33
+2024,60+,Male,Less motivation to do exercise,18
+2024,60+,Male,I am too busy working overtime,12
+2024,60+,Male,I prefer spending time on other activity,10
+2024,60+,Male,I do not think I am good enough at sport,9
+2024,60+,Male,The weather in Singapore is too hot for doing sport,6
+2024,60+,Male,The weather in Singapore is too hard to predict/forecast for sport activity,5
+2024,60+,Male,I need to take care of family members (elderly or children),4
+2024,60+,Male,Too stressed to exercise,4
+2025,13 - 19,Female,I am too busy with schoolwork/school’s activities,61
+2025,13 - 19,Female,I am studying and working (part-time/full-time),15
+2025,13 - 19,Female,Others,12
+2025,13 - 19,Female,I prefer spending time on other activity,9
+2025,13 - 19,Female,Less motivation to do exercise,9
+2025,13 - 19,Female,My personal health condition is not suitable for sport,7
+2025,13 - 19,Female,The weather in Singapore is too hot for doing sport,6
+2025,13 - 19,Female,I do not have anyone to play with,4
+2025,13 - 19,Female,The weather in Singapore is too hard to predict/forecast for sport activity,4
+2025,13 - 19,Female,"People that I usually do sport with are not available for sport now (e.g. too busy at work, have personal injury/ illness, etc.)",2
+2025,13 - 19,Male,I am too busy with schoolwork/school’s activities,48
+2025,13 - 19,Male,Less motivation to do exercise,19
+2025,13 - 19,Male,I am studying and working (part-time/full-time),13
+2025,13 - 19,Male,My personal health condition is not suitable for sport,11
+2025,13 - 19,Male,I prefer spending time on other activity,10
+2025,13 - 19,Male,Others,8
+2025,13 - 19,Male,Too stressed to exercise,5
+2025,13 - 19,Male,The weather in Singapore is too hard to predict/forecast for sport activity,4
+2025,13 - 19,Male,"The location of the facility is not convenient to access via public transport (bus, MRT, etc.)",3
+2025,13 - 19,Male,I do not think I am good enough at sport,2
+2025,20 - 39,Female,I need to take care of family members (elderly or children),45
+2025,20 - 39,Female,I am too busy working overtime,38
+2025,20 - 39,Female,Less motivation to do exercise,19
+2025,20 - 39,Female,Others,11
+2025,20 - 39,Female,I prefer spending time on other activity,6
+2025,20 - 39,Female,I am studying and working (part-time/full-time),6
+2025,20 - 39,Female,My personal health condition is not suitable for sport,5
+2025,20 - 39,Female,I am too busy with schoolwork/school’s activities,4
+2025,20 - 39,Female,The weather in Singapore is too hot for doing sport,3
+2025,20 - 39,Female,Too stressed to exercise,2
+2025,20 - 39,Male,I am too busy working overtime,42
+2025,20 - 39,Male,Less motivation to do exercise,24
+2025,20 - 39,Male,I need to take care of family members (elderly or children),21
+2025,20 - 39,Male,I prefer spending time on other activity,13
+2025,20 - 39,Male,Others,10
+2025,20 - 39,Male,My personal health condition is not suitable for sport,5
+2025,20 - 39,Male,I am too busy working for more than one job,5
+2025,20 - 39,Male,Too stressed to exercise,3
+2025,20 - 39,Male,The weather in Singapore is too hot for doing sport,3
+2025,20 - 39,Male,I am too busy with schoolwork/school’s activities,3
+2025,40 - 59,Female,I need to take care of family members (elderly or children),33
+2025,40 - 59,Female,I am too busy working overtime,26
+2025,40 - 59,Female,Less motivation to do exercise,23
+2025,40 - 59,Female,I prefer spending time on other activity,11
+2025,40 - 59,Female,Others,8
+2025,40 - 59,Female,My personal health condition is not suitable for sport,7
+2025,40 - 59,Female,I am too old for sport,6
+2025,40 - 59,Female,The weather in Singapore is too hot for doing sport,5
+2025,40 - 59,Female,I am too busy working for more than one job,5
+2025,40 - 59,Female,I do not think I am good enough at sport,4
+2025,40 - 59,Male,I am too busy working overtime,40
+2025,40 - 59,Male,Less motivation to do exercise,17
+2025,40 - 59,Male,My personal health condition is not suitable for sport,16
+2025,40 - 59,Male,I need to take care of family members (elderly or children),13
+2025,40 - 59,Male,Others,11
+2025,40 - 59,Male,I prefer spending time on other activity,8
+2025,40 - 59,Male,I am too busy working for more than one job,5
+2025,40 - 59,Male,I am too old for sport,4
+2025,40 - 59,Male,Too stressed to exercise,3
+2025,40 - 59,Male,The weather in Singapore is too hard to predict/forecast for sport activity,3
+2025,60+,Female,I am too old for sport,33
+2025,60+,Female,My personal health condition is not suitable for sport,29
+2025,60+,Female,Others,14
+2025,60+,Female,Less motivation to do exercise,13
+2025,60+,Female,I need to take care of family members (elderly or children),10
+2025,60+,Female,I am too busy working overtime,5
+2025,60+,Female,I do not think I am good enough at sport,3
+2025,60+,Female,The weather in Singapore is too hot for doing sport,3
+2025,60+,Female,The facility that I prefer is too far from where I live/work/study,3
+2025,60+,Female,I prefer spending time on other activity,2
+2025,60+,Male,I am too old for sport,36
+2025,60+,Male,My personal health condition is not suitable for sport,34
+2025,60+,Male,I am too busy working overtime,15
+2025,60+,Male,Less motivation to do exercise,11
+2025,60+,Male,Others,11
+2025,60+,Male,I need to take care of family members (elderly or children),9
+2025,60+,Male,Too stressed to exercise,4
+2025,60+,Male,I prefer spending time on other activity,3
+2025,60+,Male,I do not think I am good enough at sport,2
+2025,60+,Male,I do not have anyone to play with,2
